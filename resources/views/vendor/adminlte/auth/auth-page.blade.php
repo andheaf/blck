@@ -1,4 +1,4 @@
-x@extends('adminlte::master')
+@extends('adminlte::master')
 
 @php( $dashboard_url = View::getSection('dashboard_url') ?? config('adminlte.dashboard_url', 'home') )
 
