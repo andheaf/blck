@@ -14,7 +14,8 @@
                     <a href="/task" class="btn btn-primary">Add new Task</a>
                     <table class="table mt-4">
                         <thead><tr>
-                            <th colspan="2">Tasks</th>
+                            <th>Tasks</th>
+                            <th>Due Date</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -22,6 +23,9 @@
                             <tr>
                                 <td>
                                     {{$task->description}}
+                                </td>
+                                <td>
+                                    {{$task->due_date}}
                                 </td>
                                 <td>
 

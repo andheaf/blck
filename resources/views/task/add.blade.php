@@ -16,6 +16,16 @@
                 <textarea name="description" class="form-control"></textarea>
             </div>
 
+            <!-- Date -->
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                    </div>
+                    <input type="text" name="due_date" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="mm/dd/yyyy" data-mask="" im-insert="false">
+                </div>
+                <!-- /.input group -->
+            </div>
 
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Add Task</button>
@@ -30,3 +40,12 @@
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
+
+@section('js')
+    <script>
+        $(function() {
+            $( "#datetimepicker" ).datepicker();
+        });
+    </script>
+@stop
+
